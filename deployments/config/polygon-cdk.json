@@ -1,0 +1,70 @@
+{
+  "network": {
+    "name": "Polygon CDK",
+    "chainId": 1001,
+    "rpcUrl": "http://localhost:8545",
+    "blockExplorer": "http://localhost:4000",
+    "gasPrice": "0",
+    "gasLimit": "8000000"
+  },
+  "deployment": {
+    "confirmations": 1,
+    "timeout": 60000,
+    "retries": 3
+  },
+  "contracts": {
+    "AdminControl": {
+      "gasLimit": "2000000"
+    },
+    "CDAERC20": {
+      "gasLimit": "3000000"
+    },
+    "CDABadgeNFT": {
+      "gasLimit": "4000000"
+    },
+    "SwagRedemption": {
+      "gasLimit": "3000000"
+    },
+    "CDAResetManager": {
+      "gasLimit": "1500000"
+    }
+  },
+  "tokenomics": {
+    "totalSupplyPerCycle": "100000",
+    "allocations": {
+      "activity": "60000",
+      "milestone": "15000",
+      "swag": "10000",
+      "nft": "7500",
+      "node": "5000",
+      "admin": "2500"
+    }
+  },
+  "badges": {
+    "levels": 5,
+    "baseURI": "ipfs://QmCDABadges/",
+    "soulbound": true
+  },
+  "swag": {
+    "defaultItems": [
+      {
+        "name": "CDA T-Shirt",
+        "cost": "500",
+        "minLevel": 1,
+        "supply": 100
+      },
+      {
+        "name": "CDA Hoodie",
+        "cost": "1200",
+        "minLevel": 2,
+        "supply": 50
+      },
+      {
+        "name": "CDA Notebook",
+        "cost": "200",
+        "minLevel": 1,
+        "supply": 200
+      }
+    ]
+  }
+}

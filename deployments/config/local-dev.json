@@ -1,0 +1,42 @@
+{
+  "network": {
+    "name": "Local Development",
+    "chainId": 31337,
+    "rpcUrl": "http://127.0.0.1:8545",
+    "blockExplorer": null,
+    "gasPrice": "20000000000",
+    "gasLimit": "8000000"
+  },
+  "deployment": {
+    "confirmations": 1,
+    "timeout": 30000,
+    "retries": 2
+  },
+  "contracts": {
+    "AdminControl": {
+      "gasLimit": "2000000"
+    },
+    "CDAERC20": {
+      "gasLimit": "3000000"
+    },
+    "CDABadgeNFT": {
+      "gasLimit": "4000000"
+    },
+    "SwagRedemption": {
+      "gasLimit": "3000000"
+    },
+    "CDAResetManager": {
+      "gasLimit": "1500000"
+    }
+  },
+  "testing": {
+    "fastMode": true,
+    "autoMine": true,
+    "resetBetweenTests": true
+  },
+  "development": {
+    "enableLogging": true,
+    "mockExternalServices": true,
+    "seedData": true
+  }
+}
